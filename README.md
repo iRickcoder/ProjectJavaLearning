@@ -11,6 +11,9 @@ Those who need the knowledge please check this: [LeaningJavaOnline](https://www.
 This project is base on Java10, Oraclejdk or Openjdk is ok.  
 本项目使用Java10版本，Oracle和Open的都是ok的。
 
+Why I use java doc? cuz it looks geek and cool!
+为什么使用java doc这种方式来讲述，因为合作的时候代码内的文档会更加的方便和炫，就酱。
+
 Learn, update, upgrade self everyday.  
 好好学习，天天向上。
 
