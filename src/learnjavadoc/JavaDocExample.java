@@ -3,8 +3,8 @@ package learnjavadoc;
  * Javadoc learning code
  * Javadoc学习范例
  *
- * You can learn most Javadoc usages from this example code.
- * 从此范例中可以学习到绝大部分Javadoc的用法。
+ * You can learn most Javadoc usages from this example code. A good Java project should have a nice Javadoc.
+ * 从此范例中可以学习到绝大部分Javadoc的用法。作为Java程序员，Javadoc的学习是必要的。
  *
  * <p>Just use 'javac' compile this class {@code javac JavaDocExample.java} and run it with 'java'
  * {@code java JavaDocExample}. Run this program will generate a standard java doc in this dir.
@@ -21,13 +21,28 @@ package learnjavadoc;
  * @author rick, rick_z@outlook.com
  * @version 0.1
  */
-public class JavaDocExample {
+public class JavaDocExample extends JavaDocShellExe{
 
+    public final static String className = "JavaDocExample";
     public static void main(String[] args) {
+
+        if (args.length > 0){
+            switch (args[0]){
+                case "-h":
+                case "help":
+                case "-H":
+                    help();
+                    break;
+                default:
+                    break;
+            }
+        }
         System.out.println("hello java doc");
     }
 
     public static void help() {
-
+        JavaDocExample instanceThis = new JavaDocExample();
+        String []cmd = {"echo","this is help info!"};
+        instanceThis.exec(cmd);
     }
 }
